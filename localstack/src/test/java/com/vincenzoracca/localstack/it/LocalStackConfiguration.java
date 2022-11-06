@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.testcontainers.containers.Network;
 import org.testcontainers.containers.localstack.LocalStackContainer;
-import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.utility.DockerImageName;
 
 import javax.annotation.PostConstruct;
@@ -23,7 +22,6 @@ import static org.testcontainers.containers.localstack.LocalStackContainer.Servi
         "amazon.aws.accesskey=test1",
         "amazon.aws.secretkey=test231"
 })
-@Testcontainers
 public class LocalStackConfiguration {
 
     @Autowired
