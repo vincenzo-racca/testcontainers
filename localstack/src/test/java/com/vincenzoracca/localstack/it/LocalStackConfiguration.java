@@ -13,7 +13,7 @@ import org.testcontainers.containers.Network;
 import org.testcontainers.containers.localstack.LocalStackContainer;
 import org.testcontainers.utility.DockerImageName;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import static org.testcontainers.containers.localstack.LocalStackContainer.Service.DYNAMODB;
 
